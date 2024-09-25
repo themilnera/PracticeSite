@@ -1,0 +1,158 @@
+.headernav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+  background-color: rgb(109, 147, 177);
+  background-image: url("img/AbstractGrid.jpg");
+}
+
+.content {
+  padding: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 160px;
+  border-radius: 5px;
+  z-index: 1;
+  background-color: rgb(234, 234, 234);
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(161, 187, 187);
+  margin: 0;
+}
+
+header h1 {
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+
+  font-size: 50px;
+}
+
+header a {
+  text-decoration: none;
+  color: rgb(159, 222, 199);
+  text-shadow: 3px 3px rgb(27, 24, 24);
+}
+
+nav {
+  position: sticky;
+  top: 100px;
+  width: 100%;
+}
+
+nav ul {
+  white-space: nowrap;
+  margin: 0 auto;
+  background-color: rgb(15, 84, 109);
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  font-size: 30px;
+}
+
+nav li a {
+  text-decoration: none;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 3px;
+  padding-bottom: 2px;
+  margin: auto;
+  width: 20%;
+  color: rgb(68, 4, 25);
+  background-color: rgb(87, 144, 122);
+  border: solid 3px rgb(9, 62, 81);
+  border-radius: 6px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+img[src="img/EndOfTunnelLight.jpg"] {
+  width: 800px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.morep {
+  background-image: url("img/ChristmasColorsRain.jpg");
+  color: rgb(255, 255, 255);
+  text-shadow: 4px, 4px, rgb(161, 0, 0);
+  border-radius: 5px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/*psuedo classes*/
+
+nav li a:hover {
+  background-color: rgb(20, 80, 57);
+  color: rgb(214, 11, 11);
+}
+p::selection {
+  background-color: rgb(15, 84, 109);
+  color: white;
+}
+
+/*Responsive Styles*/
+
+@media screen and (max-width: 1000px) {
+  nav li {
+    font-size: 25px;
+  }
+  header h1 {
+    font-size: 40px;
+  }
+  /* .content h2{
+    font size 
+  } */
+}
+@media screen and (max-width: 800px) {
+  nav li {
+    font-size: 20px;
+  }
+  header h1 {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 600px) {
+  nav li {
+    font-size: 18px;
+    display: block;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    margin-right: 20px;
+  }
+
+  .headernav {
+    width: 100%;
+  }
+  .content {
+    margin-top: 260px;
+  }
+  header h1 {
+    font-size: 25px;
+    max-width: 100%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 285px) {
+  nav li {
+    max-width: 100%;
+    margin-right: 50%;
+  }
+}
