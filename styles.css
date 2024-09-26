@@ -16,6 +16,7 @@
   border-radius: 5px;
   z-index: 1;
   background-color: rgb(234, 234, 234);
+  box-shadow: 5px 5px 5px gray;
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -28,14 +29,13 @@ header h1 {
   padding: 20px;
   text-align: center;
   width: 100%;
-
   font-size: 50px;
 }
 
 header a {
   text-decoration: none;
   color: rgb(159, 222, 199);
-  text-shadow: 3px 3px rgb(27, 24, 24);
+  text-shadow: 5px 3px rgb(27, 24, 24);
 }
 
 nav {
@@ -49,6 +49,7 @@ nav ul {
   margin: 0 auto;
   background-color: rgb(15, 84, 109);
   text-align: center;
+  box-shadow: 3px 3px 5px gray;
 }
 
 nav li {
